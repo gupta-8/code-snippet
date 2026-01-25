@@ -80,6 +80,7 @@ export function SnippetEditor({
       setTags([]);
       lastAutoDetect.current = '';
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [snippet?.id]);
   
   // Focus title on new snippet
@@ -192,6 +193,7 @@ export function SnippetEditor({
     };
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [title, code, language, tags]);
   
   return (
