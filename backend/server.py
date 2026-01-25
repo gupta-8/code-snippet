@@ -49,10 +49,10 @@ app = FastAPI(title="Code Snippet Manager API", version="2.0.0")
 # Create a router with the /api prefix
 api_router = APIRouter(prefix="/api")
 
-# Health check endpoint (for Railway and other platforms)
-@api_router.get("/health")
-async def health_check():
-    """Health check endpoint for deployment platforms."""
+# Root-level health check (for Railway - no /api prefix)
+@app.get("/health")
+async def root_health_check():
+    """Root health check for deployment platforms."""
     return {"status": "healthy", "version": "2.0.0"}
 
 # Security
