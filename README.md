@@ -9,7 +9,7 @@
 [![React](https://img.shields.io/badge/React-18+-61DAFB.svg)](https://reactjs.org)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.100+-009688.svg)](https://fastapi.tiangolo.com)
 
-[Features](#-features) • [Installation](#-installation) • [Deployment](#-deployment) • [Contributing](#-contributing)
+[Features](#features) • [Installation](#installation) • [Deployment](#deployment) • [Contributing](#contributing)
 
 ---
 
@@ -114,7 +114,7 @@ code-snippet/
 
 ---
 
-## 🚀 Installation
+## Installation
 
 ### Prerequisites
 - Node.js 18+
