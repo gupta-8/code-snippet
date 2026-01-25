@@ -343,13 +343,3 @@ For security concerns, please see our [Security Policy](SECURITY.md).
 
 - Create an [Issue](https://github.com/gupta-8/code-snippet/issues)
 - Start a [Discussion](https://github.com/gupta-8/code-snippet/discussions)
-
----
-
-<div align="center">
-
-**Made with ❤️ by developers, for developers**
-
-⭐ Star this repo if you find it useful!
-
-</div>
