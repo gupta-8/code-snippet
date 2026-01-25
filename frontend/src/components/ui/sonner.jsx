@@ -1,10 +1,12 @@
-import { useTheme } from "next-themes"
 import { Toaster as Sonner, toast } from "sonner"
 
 const Toaster = ({
   ...props
 }) => {
-  const { theme = "system" } = useTheme()
+  // Get theme from document or default to dark
+  const theme = typeof document !== 'undefined' 
+    ? document.documentElement.classList.contains('light') ? 'light' : 'dark'
+    : 'dark';
 
   return (
     <Sonner
