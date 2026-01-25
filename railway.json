@@ -1,0 +1,22 @@
+{
+  "name": "code-snippet-manager",
+  "services": {
+    "backend": {
+      "source": "backend",
+      "builder": "nixpacks",
+      "startCommand": "python -m uvicorn server:app --host 0.0.0.0 --port $PORT",
+      "healthcheckPath": "/api/health",
+      "envVars": {
+        "PYTHON_VERSION": "3.11"
+      }
+    },
+    "frontend": {
+      "source": "frontend", 
+      "builder": "nixpacks",
+      "startCommand": "npm start",
+      "envVars": {
+        "NODE_VERSION": "18"
+      }
+    }
+  }
+}

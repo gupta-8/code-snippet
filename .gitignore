@@ -1,0 +1,109 @@
+# ================================
+# Code Snippet Manager - .gitignore
+# ================================
+
+# ----- Environment Files -----
+.env
+.env.local
+.env.development
+.env.production
+.env.staging
+.env*.local
+# Keep example files
+!.env.example
+
+# ----- Dependencies -----
+node_modules/
+.pnp/
+.pnp.js
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+
+# ----- Python -----
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+venv/
+.venv/
+env/
+ENV/
+.Python
+pip-log.txt
+pip-delete-this-directory.txt
+
+# ----- Database -----
+*.db
+*.sqlite
+*.sqlite3
+tagsnip.db
+
+# ----- Build Outputs -----
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# ----- Test & Coverage -----
+coverage/
+.coverage
+htmlcov/
+.pytest_cache/
+.tox/
+test_reports/
+test_result.md
+
+# ----- IDE & Editors -----
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+*.sublime-project
+*.sublime-workspace
+
+# ----- OS Files -----
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# ----- Logs -----
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+logs/
+
+# ----- Misc -----
+*.bak
+*.tmp
+*.temp
+.cache/
+.parcel-cache/
+
+# ----- Project Specific -----
+memory/
+*.pack
+*.pem
+*.key
+secrets/
+
+# ----- Next.js -----
+.next/
+out/
+
+# ----- Vercel -----
+.vercel
+
+# ----- Archive Files -----
+*.zip
+*.tar.gz
+*.tar
+*.tgz
+*.rar
